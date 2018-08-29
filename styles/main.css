@@ -32,6 +32,11 @@ body
 	font-size:16px;
 }
 
+.large-fontsize
+{
+	font-size:32px;
+}
+
 .info-bar
 {
 	max-height:48px;
@@ -323,7 +328,7 @@ body
 {
 	color:#0074BB;
 	font-size:16px;
-	text-align:center;
+	text-align:left;
 	/*min-width:300px;*/
 	/*background:red;*/
 }
@@ -454,6 +459,11 @@ body
 	.normal-fontsize
 	{
 		font-size:12px;
+	}
+	
+	.large-fontsize
+	{
+		font-size:18px;
 	}
   
 	.info-bar
