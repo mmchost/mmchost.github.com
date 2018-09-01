@@ -1,21 +1,20 @@
 function Page_OnResize()
 {
-	//data:image/png;base64,
-    var banner1920 = "<img style=\"border-style:none; max-width:1920px; max-height:480px; width:100%;\" src=\"images/banner/1920x480.png\"/>";
-	var banner1280 = "<img style=\"border-style:none; max-width:1280px; max-height:480px; width:100%;\" src=\"images/banner/1280x480.png\"/>";
-	var banner960 = "<img style=\"border-style:none; max-width:960px; max-height:480px; width:100%;\" src=\"images/banner/960x480.png\"/>";
-	var banner640 = "<img style=\"border-style:none; max-width:640px; max-height:320px; width:100%;\" src=\"images/banner/640x320.png\"/>";
-	var banner480 = "<img style=\"border-style:none; max-width:480px; max-height:320px; width:100%;\" src=\"images/banner/480x320.png\"/>";
-	var banner320 = "<img style=\"border-style:none; max-width:320px; max-height:320px; width:100%;\" src=\"images/banner/320x320.png\"/>";
-	var banner240 = "<img style=\"border-style:none; max-width:240px; max-height:320px; width:100%;\" src=\"images/banner/240x320.png\"/>";
+    var banner1920 = "<img style=\"border-style:none; max-width:1920px; max-height:480px; width:100%;\" src=\"images/banner/1920x480.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
+	var banner1280 = "<img style=\"border-style:none; max-width:1280px; max-height:480px; width:100%;\" src=\"images/banner/1280x480.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
+	var banner960 = "<img style=\"border-style:none; max-width:960px; max-height:480px; width:100%;\" src=\"images/banner/960x480.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
+	var banner640 = "<img style=\"border-style:none; max-width:640px; max-height:320px; width:100%;\" src=\"images/banner/640x320.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
+	var banner480 = "<img style=\"border-style:none; max-width:480px; max-height:320px; width:100%;\" src=\"images/banner/480x320.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
+	var banner320 = "<img style=\"border-style:none; max-width:320px; max-height:320px; width:100%;\" src=\"images/banner/320x320.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
+	var banner240 = "<img style=\"border-style:none; max-width:240px; max-height:320px; width:100%;\" src=\"images/banner/240x320.png\" alt=\"radiografii dentare, tomografii 3d cbct, radiologie dentara\"/>";
 
-	var map1920 = "<img style=\"border-style:none; max-width:1920px; max-height:480px; width:100%;\" src=\"images/map/1920x480.png\"/>";
-	var map1280 = "<img style=\"border-style:none; max-width:1280px; max-height:480px; width:100%;\" src=\"images/map/1280x480.png\"/>";
-	var map960 = "<img style=\"border-style:none; max-width:960px; max-height:480px; width:100%;\" src=\"images/map/960x480.png\"/>";
-	var map640 = "<img style=\"border-style:none; max-width:640px; max-height:320px; width:100%;\" src=\"images/map/640x320.png\"/>";
-	var map480 = "<img style=\"border-style:none; max-width:480px; max-height:320px; width:100%;\" src=\"images/map/480x320.png\"/>";
-	var map320 = "<img style=\"border-style:none; max-width:320px; max-height:320px; width:100%;\" src=\"images/map/320x320.png\"/>";
-	var map240 = "<img style=\"border-style:none; max-width:240px; max-height:320px; width:100%;\" src=\"images/map/240x320.png\"/>";
+	var map1920 = "<img style=\"border-style:none; max-width:1920px; max-height:480px; width:100%;\" src=\"images/map/1920x480.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
+	var map1280 = "<img style=\"border-style:none; max-width:1280px; max-height:480px; width:100%;\" src=\"images/map/1280x480.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
+	var map960 = "<img style=\"border-style:none; max-width:960px; max-height:480px; width:100%;\" src=\"images/map/960x480.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
+	var map640 = "<img style=\"border-style:none; max-width:640px; max-height:320px; width:100%;\" src=\"images/map/640x320.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
+	var map480 = "<img style=\"border-style:none; max-width:480px; max-height:320px; width:100%;\" src=\"images/map/480x320.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
+	var map320 = "<img style=\"border-style:none; max-width:320px; max-height:320px; width:100%;\" src=\"images/map/320x320.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
+	var map240 = "<img style=\"border-style:none; max-width:240px; max-height:320px; width:100%;\" src=\"images/map/240x320.png\" alt=\"radiologie dentara cluj, radiografii dentare cluj, medios medical center cluj\"/>";
 	
 	var bannerID = "banner";
 	var mapID = "map";
