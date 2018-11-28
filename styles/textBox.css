@@ -1,0 +1,55 @@
+.textbox
+{
+	min-width:280px;
+    max-width:280px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    /*resize: vertical; /*for texarea only*/
+	font-family:open_sanslight;	
+}
+
+.textbox:focus 
+{
+    border:1px solid #0074BB;
+}
+
+.textbox-numeric
+{
+	min-width:32px;
+	/*min-height:28px;*/
+    padding:0px;
+    border-style:none;
+	border-color:#ccc;
+	border-width:1px 0px 1px 0px;
+    /*border-radius:4px;*/
+	font-family:open_sanslight;
+	text-align:center;
+	font-size:16px;
+}
+
+.textbox-numeric:focus 
+{
+    border:1px solid #0074BB;
+}
+
+.textbox-numeric:disabled ,
+.textbox-numeric[disabled]
+{
+	background:white;
+	color:black;
+}
+
+@media screen and (max-width:990px) 
+{
+	.textbox
+	{
+		min-width:250px;
+		max-width:250px;
+	}
+	
+	.textbox-numeric
+	{
+		font-size:12px;
+	}
+}
