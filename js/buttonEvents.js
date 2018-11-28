@@ -3,28 +3,47 @@ function WarningButton_Click()
 	var wb = document.getElementById("warning-bar");
 	var header = document.getElementById("header");
 	var mc = document.getElementById("main-content");
-	var examstag = document.getElementById("examstag");
-	var contacttag = document.getElementById("contacttag");
-	var newstag = document.getElementById("infotag");
+	var sectionTag1 = document.getElementById("sectionTag1");
+	var sectionTag2 = document.getElementById("sectionTag2");
+	var sectionTag3 = document.getElementById("sectionTag3");
 	var pos = 48;
-	var id = setInterval(frame, 5);
+	var id = setInterval(frame, 5);	
 	function frame() 
 	{
 		if (pos == 0) 
 		{
-			clearInterval(id);			
+			clearInterval(id);
 			//wb.innerHTML = "";
 		}
 		else 
 		{
 			pos--; 
-			wb.style.top = pos - 48 + 'px';
-			header.style.top = pos + 'px';
-			mc.style.top = pos + 64 + 'px';			
+			if (wb)
+			{
+				wb.style.top = pos - 48 + 'px';
+			}
+			if (header)
+			{
+				header.style.top = pos + 'px';
+			}
+			if (mc)
+			{
+				mc.style.top = pos + 80 + 'px';
+			}
 		}
-		examstag.setAttribute('style', 'height:64px; margin-top:-65px;');
-		newstag.setAttribute('style', 'height:64px; margin-top:-65px;');
-		contacttag.setAttribute('style', 'height:64px; margin-top:-65px;');
+		
+		if (sectionTag1)
+		{
+			sectionTag1.setAttribute('style', 'height:80px; margin-top:-80px;');
+		}
+		if (sectionTag2)
+		{
+			sectionTag2.setAttribute('style', 'height:80px; margin-top:-80px;');
+		}
+		if (sectionTag3)
+		{
+			sectionTag3.setAttribute('style', 'height:80px; margin-top:-80px;');
+		}
 	}
 }
 
