@@ -10,25 +10,30 @@
     font-style: normal;
 }
 
-#header, #footer
+#header, #footer, #header-404
 {
-	position: fixed;
+	position:fixed;
 	display:block;
 	width:100%;
 	background:#0074BB;
 	z-index:9;
 	color:#f2f2f2;
-	height:64px;	
+	height:81px; /*1px for bottom border-separator*/
+	border-style:solid;border-color:#fff;border-width:0px 0px 1px 0px;
 }
 #header
 {
 	left:0px;
-	top:0px; /*IMPORTANT: IF THE INFO BAR IS DISABLED, THE TOP OF THE MAIN MENU MUST BE 0, ELSE 48px */
+	top:0px;
+}
+#header-404
+{
+	left:0px;
+	top:0px;
 }
 #footer{
 	bottom:0px;
 }
-
 
 body
 {
@@ -37,6 +42,11 @@ body
 	font-size:16px;	
 	font-style:normal;
 	font-weight:300;
+}
+
+.highlight-text
+{
+	color:#0074BB;
 }
 
 .normal-fontsize
@@ -53,212 +63,6 @@ body
 {
 	font-size:128px;
 }
-
-.info-bar
-{
-	max-height:48px;
-	font-size:14px;
-}
-.info-bar-icon
-{
-	margin-left:96px;
-	width:32px;
-}
-.info-bar-cell
-{
-	padding-right:96px;
-}
-
-
-.footer-menu-container
-{
-	background:#F3F3F3; 
-	/*height:64px; */
-	padding-bottom:16px;
-	padding-left:50px; 
-	padding-right:50px;
-}
-.footer-menu
-{
-	padding-left:20px;
-	padding-right:20px;
-	border-color:#999999; 
-	border-style:none solid none none; 
-	border-width:1px;
-}
-.footer-menu a
-{
-	text-decoration:none;
-	color: #999999;
-}
-
-
-.header-menu
-{
-	display:inline-block;
-	background:#0074BB;	
-	text-align:center;
-}
-.header-logo
-{
-	height:64px;	
-	background:#0066A2;
-}
-.header-cell
-{
-	text-align:center;
-	background:#0066A2;
-	width:512px;
-	min-width:312px;
-	/*width:100%;*/
-}
-.header-cell a
-{
-	display:block;
-	width:100%;
-	height:100%;
-	/*background:orange;*/
-	outline:0px solid black;
-}
-
-
-.menu-separator
-{
-	width:44px;
-}
-.menu-item
-{	
-	width:136px;
-	min-width:136px;
-	height:64px;
-	background:#0074BB;	
-	color: #FFFFFF;
-	font-size:16px;
-	text-align:center;
-}
-.menu-item:hover
-{
-	background:#0066A2;
-}
-.menu-item:focus
-{
-  outline:0px solid red;
-}
-.menu-item a
-{
-	text-decoration:none;
-	color:#FFFFFF;
-	display:table-cell;
-	height:64px;
-	width:136px;
-	vertical-align:middle;
-	outline:0px solid red;
-}
-/*
-.active, .menu-item:hover
-{
-	background-color:#666;
-}
-*/
-
-
-.image-hlink
-{
-}
-.image-hlink:hover
-{
-}
-.image-hlink:focus 
-{
-	outline: 0px solid orange;
-}
-
-
-.button
-{	
-	text-decoration:none;
-	display:table-cell;
-	width:112px;
-	min-width:112px;
-	height:32px;
-	background:#0074BB;	
-	color:#FFFFFF;	
-	text-align:center;
-	vertical-align:middle;
-	border-radius:10px;
-	font-weight:bold;
-	cursor:pointer;
-}
-.button:hover
-{
-	background:#0066A2;
-}
-.button:focus
-{
-  outline:0px solid orange;
-}
-
-
-.main-content
-{
-	position:absolute;
-	border-style:solid;
-	border-width:0px;
-	top:64px; /*IMPORTANT: IF THE INFO BAR IS DISABLED, THE TOP OF THE MAIN MENU MUST BE 48px, ELSE 112px */
-	left:0px;
-	margin-right:0px;
-	width:100%;
-}
-
-.section-title
-{
-	background:#E6E6E6;
-	font-size:24px;
-	font-weight:300;		
-	padding:10px;
-	text-align:center;
-	border-style:none none solid none;
-	border-width:2px;
-	border-color:#FFFFFF;	
-}
-
-.section-title-header
-{
-	color:#0074BB;
-	background:#E6E6E6;
-	font-size:24px;
-	padding:10px;
-	text-align:center;
-	border-style:solid none solid none;
-	border-width:2px;
-	border-color:#FFFFFF;
-}
-
-
-.info-content
-{
-	width:100%;
-	padding:0px;
-	height:240px;
-	min-height:240px;
-	background:#F3F3F3;
-}
-.info-text
-{
-	color:#0074BB;
-	font-size:24px;
-}
-.info-cell
-{
-	/*align:center;*/
-	width:320px;
-	min-width:320px;
-	height:240px;
-	min-height:240px;
-	padding-top:20px;
-	padding-bottom:10px;
-}
-
 
 .message-content
 {
@@ -333,140 +137,7 @@ body
 	font-size:12px;
 }
 
-
-.footer-content
-{
-	height:304px;
-	background:#F3F3F3;
-	padding-left:5px;
-	padding-right:5px;
-}
-.footer-title
-{
-	color:#0074BB;
-	font-size:16px;
-	text-align:left;
-	/*min-width:300px;*/
-	/*background:red;*/
-}
-.footer-menu
-{
-	padding-left:20px;
-	padding-right:20px;
-	border-color:#999999; 
-	/*border-style:none solid none none; */
-	border-width:0px;
-}
-.footer-copyright
-{	
-	height:48px;
-	/*min-height:32px;*/
-	text-align:center;
-	font-size:14px;
-	background:#E6E6E6;
-	color:#999999;
-	border-style:solid none solid none;
-	border-color:#FFFFFF;
-	border-width:0px;
-}
-.footer-menu a
-{
-	text-decoration:none;
-	color: #999999;
-}
-.footer-separator
-{
-	width:1px;
-	background:#999999;
-	height:10px;
-	display:inline-block;
-}
-
-.tag
-{
-	position:absolute;
-	display:block; 
-	/*background:red; /*FOR TESTING PURPOSES ONLY*/
-	width:10px; 
-	height:64px; /*IMPORTANT: IF THE INFO BAR IS DISABLED, THE TOP OF THE MAIN MENU MUST BE 64px, ELSE 112px */
-	margin-top:-65px; /*IMPORTANT: IF THE INFO BAR IS DISABLED, THE TOP OF THE MAIN MENU MUST BE -65px, ELSE -113px */
-}
-
-.cookiesbar
-{
-	position:fixed; 
-	z-index:10; 
-	background:#F0F0F0; 
-	bottom:0px; 
-	left:0px; 
-	right:0px; 
-	width:100%; 
-	height:48px; 
-	border-style:solid; 
-	border-width:2px 0px 0px 0px; 
-	border-color:white;
-}
-
-.footer-copyright-whitespace
-{
-	height:48px; 
-	min-height:48px; 
-	background:#E6E6E6; 
-	border-style:none;
-}
-
-.logo-footer
-{
-}
-
-.overlay 
-{
-    visibility:hidden;
-    position:fixed;
-    left: 0px;
-    top: 0px;
-    width:100%;
-    height:100%;
-    text-align:center;
-    z-index: 1000;
-	background:#E6E6E6;
-    background:rgba(0,0,0,0.5);
-	//-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000,endColorstr=#9F000000)";	 
-}
-
-.overlay-content 
-{	
-    width:480px;     
-    //background-color: #fff;    
-    text-align:center;
-	border:1px solid #0074BB;
-}
-
-@media screen and (max-width: 1300px) 
-{
-	.info-text
-	{
-		font-size:24px;
-	}
-	.info-cell
-	{
-		width:240px;
-		min-width:240px;
-		height:180px;
-		min-height:180px;
-	}
-	.info-cell img
-	{
-		width:48px;
-		min-width:48px;
-	}
-	.header-cell
-	{
-		width:320px;		
-	}
-}
-
-@media screen and (max-width:990px) 
+@media screen and (max-width:990px)
 {
 	body
 	{
@@ -487,109 +158,12 @@ body
 	{
 		font-size:96px;
 	}
-  
-	.info-bar
-	{
-		font-size:11px;
-	}
-
-	.info-bar-icon
-	{
-		margin-left:10px;
-		width:24px;
-	}
-	.info-bar-cell
-	{
-		padding-right:10px;
-	}
-	.button
-	{
-		width:72px;
-		min-width:72px;
-		height:24px;
-		border-radius:5px;
-	}
-
-	.header-logo
-	{
-		height:48px;
-	}
-	.header
-	{
-		height:32px;
-	}
-	.header-menu
-	{
-		width:100%;
-	}
-	.header-menu-cell
-	{
-		width:2000px;
-	}
-	.header-cell
-	{
-		width:2000px;
-	}
-	
-	.menu-item 
-	{
-		font-size:12px;
-		width:86px;
-		min-width:0px;
-		height:32px;
-	}
-	.menu-item a
-	{
-		width:86px;
-		height:32px;
-	}
-	.menu-separator  
-	{
-		width:0px;
-		height:32px;
-	} 
-	
-	.main-content
-	{
-		top:80px;
-	}
-	.info-text
-	{
-		font-size:16px;
-	}
-	.info-cell
-	{
-		width:160px;
-		min-width:160px;
-		height:140px;
-		min-height:140px;
-		//background:red;
-	}
-	.info-cell img
-	{
-		width:32px;
-		min-width:32px;
-	}
-	.info-content
-	{
-		/*background:yellow;*/
-	}
 	
 	.message-content
 	{
 		height:64px;
 		min-height:64px;
 	} 
-	
-	.section-title
-	{
-		font-size:16px;
-	}
-	.section-title-header
-	{
-		font-size:16px;
-	}
-	
 	
 	.exams-type
 	{
@@ -615,80 +189,10 @@ body
 	{
 		font-size:10px;
 	}
-	
-	.footer-content
-	{
-		height:232px;		
-	}
-	.footer-title
-	{
-		color:#0074BB;
-		font-size:14px;
-		width:152px;
-	}
-	.footer-menu
-	{
-		padding-left:5px;
-		padding-right:5px;
-		font-size:12px;
-	}
-	.footer-copyright
-	{
-		width:2000px;
-		font-size:11px;
-		text-align:center;
-	}
-	.footer-menu-container
-	{
-		padding-left:5px; 
-		padding-right:5px;
-	}
-	.logo-footer
-	{
-		width:24px;
-	}
-	
-	.tag
-	{
-		height:80px; /*IMPORTANT: IF THE INFO BAR IS DISABLED, THE TOP OF THE MAIN MENU MUST BE 64px, ELSE 112px */
-		margin-top:-81px; /*IMPORTANT: IF THE INFO BAR IS DISABLED, THE TOP OF THE MAIN MENU MUST BE -65px, ELSE -113px */
-	}
-	
-	.overlay-content
-	{
-		width:320px;
-	}
 }
 
 @media screen and (max-width:380px)
 {
-	.info-text
-	{
-		font-size:12px;
-	}
-	.info-cell
-	{
-		width:130px;
-		min-width:130px;
-		height:120px;
-		min-height:120px;
-		left:-20px;		
-	}
-	.info-cell img
-	 {
-		width:24px;
-		min-width:24px;
-	}
-	
-	.section-title	
-	{
-		font-size:12px;
-	}
-	.section-title-header
-	{
-		font-size:12px;
-	}
-	
 	.exams-type
 	{
 		font-size:12px;
@@ -696,10 +200,5 @@ body
 	.exams-name
 	{
 		font-size:12px;
-	}
-	
-	.overlay-content
-	{
-		width:280px;
-	}
+	}	
 }
