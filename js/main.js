@@ -115,39 +115,39 @@ function Page_OnLoad()
 		var header = document.getElementById("header");
 		if (header)
 		{
-			header.setAttribute('style', 'top:48px;');
+			header.setAttribute('style', 'top:64px;');
 		}
 		if (mainContent)
 		{
-			mainContent.setAttribute('style', 'top:128px;');
+			mainContent.setAttribute('style', 'top:144px;');
 		}
 	
 		if (sectionTag1)
 		{
-			sectionTag1.setAttribute('style', 'height:128px; margin-top:-128px;');
+			sectionTag1.setAttribute('style', 'height:144px; margin-top:-144px;');
 		}
 		if (sectionTag2)
 		{
-			sectionTag2.setAttribute('style', 'height:128px; margin-top:-128px;');
+			sectionTag2.setAttribute('style', 'height:144px; margin-top:-144px;');
 		}
 		if (sectionTag3)
 		{
-			sectionTag3.setAttribute('style', 'height:128px; margin-top:-128px;');
+			sectionTag3.setAttribute('style', 'height:144px; margin-top:-144px;');
 		}
 	}
 	else	
 	{
 		if (sectionTag1)
 		{
-			sectionTag1.setAttribute('style', 'height:80px; margin-top:-80px;');
+			sectionTag1.setAttribute('style', 'height:96px; margin-top:-96px;');
 		}
 		if (sectionTag2)
 		{
-			sectionTag2.setAttribute('style', 'height:80px; margin-top:-80px;');
+			sectionTag2.setAttribute('style', 'height:96px; margin-top:-96px;');
 		}
 		if (sectionTag3)
 		{
-			sectionTag3.setAttribute('style', 'height:80px; margin-top:-80px;');
+			sectionTag3.setAttribute('style', 'height:96px; margin-top:-96px;');
 		}
 	}
 
