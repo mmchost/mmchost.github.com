@@ -28,7 +28,7 @@ function WarningButton_Click()
 			}
 			if (mc)
 			{
-				mc.style.top = pos + 160 + 'px';
+				mc.style.top = pos + 80 + 'px';
 			}
 		}
 		
