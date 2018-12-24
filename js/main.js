@@ -115,24 +115,24 @@ function Page_OnLoad()
 		var header = document.getElementById("header");
 		if (header)
 		{
-			header.setAttribute('style', 'top:80px;');
+			header.setAttribute('style', 'top:100px;');
 		}
 		if (mainContent)
 		{
-			mainContent.setAttribute('style', 'top:160px;');
+			mainContent.setAttribute('style', 'top:180px;');
 		}
 	
 		if (sectionTag1)
 		{
-			sectionTag1.setAttribute('style', 'height:160px; margin-top:-160px;');
+			sectionTag1.setAttribute('style', 'height:180px; margin-top:-180px;');
 		}
 		if (sectionTag2)
 		{
-			sectionTag2.setAttribute('style', 'height:160px; margin-top:-160px;');
+			sectionTag2.setAttribute('style', 'height:180px; margin-top:-180px;');
 		}
 		if (sectionTag3)
 		{
-			sectionTag3.setAttribute('style', 'height:160px; margin-top:-160px;');
+			sectionTag3.setAttribute('style', 'height:180px; margin-top:-180px;');
 		}
 	}
 	else	
