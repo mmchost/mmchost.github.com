@@ -18,7 +18,7 @@
 	background:#0074BB;
 	z-index:9;
 	color:#f2f2f2;
-	height:101px; /*1px for bottom border-separator*/
+	height:81px; /*1px for bottom border-separator*/
 	border-style:solid;border-color:#fff;border-width:0px 0px 1px 0px;
 }
 #header
