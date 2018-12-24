@@ -6,7 +6,7 @@ function WarningButton_Click()
 	var sectionTag1 = document.getElementById("sectionTag1");
 	var sectionTag2 = document.getElementById("sectionTag2");
 	var sectionTag3 = document.getElementById("sectionTag3");
-	var pos = 48;
+	var pos = 64;
 	var id = setInterval(frame, 5);	
 	function frame() 
 	{
@@ -20,7 +20,7 @@ function WarningButton_Click()
 			pos--; 
 			if (wb)
 			{
-				wb.style.top = pos - 48 + 'px';
+				wb.style.top = pos - 64+ 'px';
 			}
 			if (header)
 			{
@@ -28,21 +28,21 @@ function WarningButton_Click()
 			}
 			if (mc)
 			{
-				mc.style.top = pos + 80 + 'px';
+				mc.style.top = pos + 96 + 'px';
 			}
 		}
 		
 		if (sectionTag1)
 		{
-			sectionTag1.setAttribute('style', 'height:80px; margin-top:-80px;');
+			sectionTag1.setAttribute('style', 'height:96px; margin-top:-96px;');
 		}
 		if (sectionTag2)
 		{
-			sectionTag2.setAttribute('style', 'height:80px; margin-top:-80px;');
+			sectionTag2.setAttribute('style', 'height:96px; margin-top:-96px;');
 		}
 		if (sectionTag3)
 		{
-			sectionTag3.setAttribute('style', 'height:80px; margin-top:-80px;');
+			sectionTag3.setAttribute('style', 'height:96px; margin-top:-96px;');
 		}
 	}
 }
