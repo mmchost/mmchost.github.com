@@ -34,15 +34,15 @@ function WarningButton_Click()
 		
 		if (sectionTag1)
 		{
-			sectionTag1.setAttribute('style', 'height:100px; margin-top:-100px;');
+			sectionTag1.setAttribute('style', 'height:80px; margin-top:-80px;');
 		}
 		if (sectionTag2)
 		{
-			sectionTag2.setAttribute('style', 'height:100px; margin-top:-100px;');
+			sectionTag2.setAttribute('style', 'height:80px; margin-top:-80px;');
 		}
 		if (sectionTag3)
 		{
-			sectionTag3.setAttribute('style', 'height:100px; margin-top:-100px;');
+			sectionTag3.setAttribute('style', 'height:80px; margin-top:-80px;');
 		}
 	}
 }
