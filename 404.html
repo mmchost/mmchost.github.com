@@ -1,229 +1,441 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ro" lang="ro-ro">
 <head>
+<meta name="robots" content="noindex" />
 
-<title>Medios Medical Center - Centru de radiologie si imagistica dentara</title>
-<meta name="keywords" content="404">
-<meta name="description" content="404">
-<meta name="author" content="Medios Medical Center">
+<title>Medios Medical Center</title>
+<meta name="keywords" content="404" />
+<meta name="description" content="404" />
+<meta name="author" content="Medios Medical Center" />
 
-<meta name="Resource-type" content="Document">
+<meta name="Resource-type" content="Document" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400"/> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700"/> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800"/>
 
-<link rel="stylesheet" type="text/css" href="styles/main.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/footer.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/messageBox.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/button.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/hyperlink.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/tag.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/infoBar.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/header.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/menu.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/section.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/mainContent.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/info.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/overlay.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/textBox.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/item.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/cart.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/form.css" charset="utf-8"/>
+<style type="text/css">
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo.js"></script>	
-<script type="text/javascript" src="js/jquery.smoothAnchors.js"></script>
+@font-face {
+    font-family:'open_sanslight';
+    src: url('styles/OpenSans-Light-webfont.eot');
+    src: url('styles/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('styles/OpenSans-Light-webfont.woff2#open_sanslight') format('woff2'),
+         url('styles/OpenSans-Light-webfont.woff#open_sanslight') format('woff'),
+         url('styles/OpenSans-Light-webfont.ttf#open_sanslight') format('truetype'),
+         url('styles/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-<script type="text/javascript" src="js/buttonEvents.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/getCookie.js"></script>
-<script type="text/javascript" src="js/messageBox.js"></script>
+.light-theme
+{
+	background-color:#E6E6E6;
+	color:#343434;
+}
+.dark-theme
+{
+	background-color:#404040;
+	color:#fff;
+}
 
-<script type="text/javascript">
-	$(document).ready(function(){
-		$.smoothAnchors("slow");
-	});
-	
-	function overlay() 
+body
+{
+	font-family:'open_sanslight';	
+	font-size:16px;	
+	font-style:normal;
+	font-weight:300;
+	margin:0px;
+}
+
+.normal-fontsize
+{
+	font-size:16px;
+}
+
+.large-fontsize
+{
+	font-size:32px;
+}
+
+.huge-fontsize
+{
+	font-size:128px;
+}
+
+.light-theme .main-content
+{
+	position:absolute;
+	border-style:solid;
+	border-width:0px;
+	left:0px;
+	margin-right:0px;
+	width:100%;
+	background:#F3F3F3;
+}
+.dark-theme .main-content
+{
+	position:absolute;
+	border-style:solid;
+	border-width:0px;
+	left:0px;
+	margin-right:0px;
+	width:100%;
+	background:#343434;
+}
+
+.button-default
+{
+	display:cell;
+	font-size:16px;
+	color:white;
+	min-width:128px;
+	max-width:302px;
+	width:100%;
+	height:46px;
+	padding:0px;
+	font-family:open_sanslight;
+	cursor:pointer;	
+	background:#0074BB;
+	border:none;
+	border-radius:4px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#0074BB;
+	padding:0px;
+	//transition:0.3s;
+}
+.button-default:hover
+{
+	//border-color:#0066A2;
+	background:#0088D3;
+}
+.button-default:focus
+{
+  outline:0px solid orange;
+}
+.button-default:active
+{
+	outline:0px solid orange;
+	background:#0066A2;
+}
+.button-default-disabled
+{
+	display:cell;
+	font-size:16px;	
+	min-width:128px;
+	max-width:302px;
+	width:100%;
+	height:46px;
+	padding:0px;
+	font-family:open_sanslight;	
+	border:none;
+	border-radius:4px;
+	background:#ccc;
+	color:#666666;
+	cursor:auto;
+}
+
+.theme-button-container
+{
+	display:block;
+	position:absolute;
+	width:100%;
+	height:80px;
+	margin-top:-80px;	
+}
+.theme-button-light
+{
+	display:block;
+	float:right;	
+	margin-top:11px;
+	display:block;
+	width:34px;
+	height:26px;
+	background:url(light-theme-icon.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:10px;
+	box-sizing:inherit;
+	cursor:pointer;
+}
+.theme-button-light:hover
+{
+	background-color:#0088D3;
+}
+.theme-button-light:active
+{
+	background-color:#0066A2;
+}
+.theme-button-dark
+{
+	display:block;
+	float:right;	
+	margin-top:11px;
+	display:block;
+	width:34px;
+	height:26px;
+	background:url(dark-theme-icon.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:10px;
+	box-sizing:inherit;
+	cursor:pointer;
+}
+.theme-button-dark:hover
+{
+	background-color:#0088D3;
+}
+.theme-button-dark:active
+{
+	background-color:#0066A2;
+}
+
+.maximize-button
+{
+	display:block;
+	float:right;
+	margin-right:11px;
+	margin-top:11px;
+	display:block;
+	width:34px;
+	height:26px;
+	background:url(maximize-icon.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:10px;
+	box-sizing:inherit;
+	cursor:pointer;
+}
+.maximize-button:hover
+{
+	background-color:#0088D3;
+}
+.maximize-button:active
+{
+	background-color:#0066A2;
+}
+
+.minimize-button
+{
+	display:block;
+	float:right;
+	margin-right:11px;
+	margin-top:11px;
+	display:block;
+	width:34px;
+	height:26px;
+	background:url(maximize-icon.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:10px;
+	box-sizing:inherit;
+	cursor:pointer;
+}
+.minimize-button:hover
+{
+	background-color:#0088D3;
+}
+.minimize-button:active
+{
+	background-color:#0066A2;
+}
+
+.header-menu
+{
+	width:100%;
+	height:80px;
+	background:#0074BB url(images/logo-center-light.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:auto auto;
+	box-sizing:inherit;
+}
+
+.light-theme .footer-copyright
+{	
+	min-height:48px;
+	text-align:center;
+	font-size:14px;
+	background:#E6E6E6;
+	color:#999999;
+	border-style:solid none solid none;
+	border-color:#FFFFFF;
+	border-width:0px;
+	vertical-align:top;
+}
+.dark-theme .footer-copyright
+{	
+	min-height:48px;
+	text-align:center;
+	font-size:14px;
+	background:#404040;
+	color:#999999;
+	border-style:solid none solid none;
+	border-color:#FFFFFF;
+	border-width:0px;
+	vertical-align:top;
+}
+
+@media screen and (max-width:990px)
+{
+	.normal-fontsize
 	{
-		el = document.getElementById("overlay");
-		el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+		font-size:12px;
 	}
+	
+	.large-fontsize
+	{
+		font-size:18px;
+	}
+	
+	.huge-fontsize
+	{
+		font-size:96px;
+	}
+	
+	.header-menu
+	{
+		height:48px;
+	}
+	
+	.theme-button
+	{
+	}	
+	.theme-button-container
+	{
+		height:48px;
+		margin-top:-48px;
+	}
+}
+@media screen and (max-width:380px)
+{
+	.header-menu
+	{
+		background-position-x:left 10px;
+	}
+}
+</style>
+
+<script type="text/javascript">	
+function GoBack()
+{
+	location.href = "./";
+}
+
+function ChangeTheme()
+{
+	var body = document.getElementById("body");
+	var currentClass = body.className;
+	body.className = currentClass == "dark-theme" ? "light-theme" : "dark-theme";
+		
+	var imageName = currentClass == "dark-theme" ? "light-theme-icon.png" : "dark-theme-icon.png";	
+	var themeButton = document.getElementById("themeButton");
+	var className = currentClass == "dark-theme" ? "theme-button-light" : "theme-button-dark";
+	if (themeButton)
+	{
+		themeButton.className = className;		
+	}	
+}
+
+function Maximize()
+{
+	//var elem = document.body; // Make the body go full screen.
+	//requestFullScreen(elem);
+	
+    var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
+        (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
+        (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
+        (document.msFullscreenElement && document.msFullscreenElement !== null);
+
+    var docElm = document.documentElement;
+    if (!isInFullScreen) {
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        } else if (docElm.mozRequestFullScreen) {
+            docElm.mozRequestFullScreen();
+        } else if (docElm.webkitRequestFullScreen) {
+            docElm.webkitRequestFullScreen();
+        } else if (docElm.msRequestFullscreen) {
+            docElm.msRequestFullscreen();
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+}
 </script>
 
 </head>
 
-<body bgcolor="#E6E6E6">
+<body id="body" class="light-theme">
 
-<div id="overlay" class="overlay">
-     <table width="100%" height="100%"><tr><td align="center">	 
-	 
-		<table cellpadding="10" cellspacing="0" class="overlay-content">
-			<tr><td bgcolor="#E6E6E6">Regulamentul General de Protec&#539;ie a Datelor</td></tr>
-			<tr><td bgcolor="#FFFFFF" style="text-align:left;">
-			&emsp;&#206;n conformitate cu prevederile Regulamentului General de Protec&#539;ie a Datelor (UE) nr. 679/ 2016 – RGPD sau Regulamentul, privind protec&#539;ia persoanelor fizice &#238;n ceea ce prive&#537;te prelucrarea datelor cu caracter personal &#537;i libera circula&#539;ie a acestor date, <a style="font-weight:600;">MEDIOS MEDICAL CENTER S.R.L.</a> prelucreaz&#259; date cu caracter personal &#238;n scopul efectu&#259;rii serviciilor medicale. Folosind serviciile noastre, sunte&#539;i de acord cu aceste prevederi ale regulamentului.
-			<br/>
-			&emsp;Prelucrarea datelor cu caracter personal se realizeaz&#259; cu responsabilitate prin mijloace mixte (manuale &#537;i automate), cu respectarea cerin&#539;elor legale &#537;i &#238;n condi&#539;ii care s&#259; asigure securitatea, confiden&#539;ialitatea, integritatea, disponibilitatea, transparen&#539;a &#537;i respectarea drepturilor persoanelor vizate.
-			</td></tr>
-			<tr>
-			<td bgcolor="#E6E6E6" align="right">
-				<span><a class="button" onclick="overlay()">OK</a></span>
-			</td></tr>			
-		</table>
-		
-	</td></tr></table>
-</div>
+<table cellpadding="0" cellspacing="0" class="header-menu"><tr><td></td></tr></table>
 
-<table id="header-404" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td>
-
-<!--[if lt IE 9]>
-<table cellpadding="0" cellspacing="0" border="0" style="display:inline-block;">
-<tr>
-<td class="header-cell" style="background:#005B99;"><img src="images/logo.png" class="header-logo"/></td>
-<td class="menu-separator"></td>
-<td class="menu-item">
-<a href="#top">ACAS&#258;</a>
-</td>
-<td class="menu-item">
-<a href="#exams">INVESTIGA&#538;II</a>
-</td>
-<td class="menu-item">
-<a href="#contact">CONTACT</a>
-</td>
-</tr>
-</table>
-<![endif]-->
-
-<!--[if gt IE 8]> <!-- -->
-<table cellpadding="0" cellspacing="0" border="0" style="display:inline-block;">
-<tr>
-<td class="header-cell"><a href="https://www.mediosmedical.ro"><img class="header-logo" src="images/logo.png" alt="Medios Medical Center"/></a></td>
-<td class="menu-separator"></td>
-</tr>
-</table>
-
-
-<table class="header-menu" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="header-menu-cell">
-
-<table cellpadding="0" cellspacing="0" border="0" align="center">
-<tr id="main-menu">
-<td class="menu-item active">
-<center><a href="https://www.mediosmedical.ro">ACAS&#258;</a></center>
-</td>
-<td class="menu-item">
-<center><a href="https://www.mediosmedical.ro/#exams">SERVICII</a></center>
-</td>
-<td class="menu-item">
-<center><a href="https://www.mediosmedical.ro/#contact">CONTACT</a></center>
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>
-<!-- <![endif]-->
-
-</td>
-</tr>
-</table>
-
-<table class="main-content" cellpadding="0" cellspacing="0" height="90%">
-
+<table id="mainContent" class="main-content" cellpadding="0" cellspacing="0" height="90%">
 
 <!--404-->
 <tr>
 <td style="height:100%; text-align:center; padding-top:0px; padding-bottom:64px; padding-left:10px; padding-right:10px;">
-<a class="huge-fontsize">404</a>
+<a class="huge-fontsize" style="color:#ccc;">404</a>
 <br/>
 <a class="large-fontsize">Ne pare r&#259;u, dar pagina pe care a&#539;i accesat-o nu poate fi g&#259;sit&#259;.</a>
 <br/><br/>
 <a class="normal-fontsize">Este posibil ca adresa s&#259; fie gre&#537;it&#259; sau pagina pe care o c&#259;uta&#539;i nu mai este disponibil&#259;.</a>
+<br/><br/>
+<button class="button-default" onclick="GoBack()">Inapoi la site</button>
 </td>
 </tr>
 <!--END 404-->
 
-
-<!--FOOTER-->
-<tr>
-<td class="footer-content">
-
-<table cellpadding="0" cellspacing="0" align="center" border="0">
-<tr><td>
-
-<table style="display:inline-block; min-width:300px; margin-top:10px; margin-bottom:10px; margin-left:10px;" cellspacing="0" cellpadding="0">
-<tr><td class="footer-title">PROGRAM</td></tr>
-<tr><td style="white-space:nowrap; text-align:left;">Luni-Vineri: 08:30-18:00</td></tr>
-<tr><td style="white-space:nowrap; text-align:left;">S&#226;mb&#259;t&#259;: 09:00-13:00</td></tr>
-<tr><td style="white-space:nowrap; text-align:left;">Duminic&#259;: &#206;nchis</td></tr>
-</table>
-
-<table style="display:inline-block; margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;"" cellspacing="0" cellpadding="0">
-<tr>
-<td class="footer-title">CONTACT</td>
-<tr><td style="white-space:nowrap; text-align:left;">Str. Traian, Nr. 36, Cluj-Napoca, Cluj</td></tr>
-<tr><td style="white-space:nowrap; text-align:left;">Tel: 0743929996</td></tr>
-<tr><td style="white-space:nowrap; text-align:left;">Email: mediosmedical@gmail.com</td></tr>
-</tr>
-</table>
-
-</td></tr>
-</table>
-
-</td>
-</tr>
-<!--END FOOTER-->
-
-<!--FOOTER MENU-->
-<tr>
-<td class="footer-menu-container">
-<table align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:14px; color:#999999; margin-left:10px;">
-<tr>
-
-<td><img class="logo-footer" src="images/logo_small.png" alt="Medios Medical Center"/></td>
-
-<td>
-<table cellpadding="0" cellspacing="0">
-<tr>
-<td class="footer-menu"><a href="https://www.mediosmedical.ro/#home">Acas&#259;</a></td>
-<td style="vertical-align:middle;"><a class="footer-separator"></a></td>
-<td class="footer-menu"><a href="https://www.mediosmedical.ro/#exams">Servicii</a></td>
-<td style="vertical-align:middle;"><a class="footer-separator"></a></td>
-<td class="footer-menu"><a style="cursor:pointer;" onclick="overlay()">RGPD</a></td>
-<td style="vertical-align:middle;"><a class="footer-separator"></a></td>
-<td class="footer-menu"><a href="https://www.mediosmedical.ro/#contact">Contact</a></td>
-</tr>
-</table>
-</td>
-
-<td width="100%"></td>
-
-</tr>
-</table>
-</td>
-</tr>
-<!--END FOOTER MENU-->
-
-
 <!--COPYRIGHT-->
 <tr>
-<td class="footer-copyright">
-<p>&#169; 2018 MEDIOS MEDICAL CENTER. Toate drepturile rezervate.</p>
-</td>
+<td class="footer-copyright"><p>&#169; 2018 MEDIOS MEDICAL CENTER. Toate drepturile rezervate.</p></td>
 </tr>
 <!--END COPYRIGHT-->
 
 </table>
+
+<!--footerBar-->
+<div id="footerBar"></div>
+<!--end footerBar-->
+
+<div class="theme-button-container">
+<a id="maximizeButton" class="minimize-button" onclick="Maximize()"/>
+<a id="themeButton" class="theme-button-light" onclick="ChangeTheme()"/>
+</div>
 
 </body>
 </html>
