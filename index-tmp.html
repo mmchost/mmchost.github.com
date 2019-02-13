@@ -111,7 +111,7 @@ function ReadExams(xml)
 			var node = elements[i].childNodes[j];
 			if (node.nodeType == 1) // or nodeType == Node.ELEMENT_NODE
 			{
-				item[node.nodeName] = node.textContent;
+				item[node.nodeName] = node.firstChild.nodeValue;
 			}
 			//item[elements[i].childNodes[j].nodeName] = elements[i].childNodes[j].innerHTML;
 		}
