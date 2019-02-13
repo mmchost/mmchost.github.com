@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exams>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE 1:1</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE PEDIATRIC&#258;</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE A.T.M. LATERAL</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE A.T.M. POSTERO-ANTERIOR</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE A.T.M. GUR&#258; DESCHIS&#258;</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE A.T.M. GUR&#258; &#206;NCHIS&#258;</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE BITEWING</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE SEC&#538;IONAL&#258;</name>
+		<price>30</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<exam>	
+		<name>ORTOPANTOMOGRAFIE SINUSURI MAXILARE</name>
+		<price>55</price>
+		<type>Radiografii Panoramice</type>
+	</exam>
+	<!---->
+	
+	<exam>
+		<name>RADIOGRAFIE RETROALVEOLARĂ</name>
+		<price>20</price>
+		<type>Radiografii Dentare Digitale-Retroalveolare</type>
+	</exam>
+	<exam>
+		<name>RADIOGRAFIE BITEWING</name>
+		<price>20</price>
+		<type>Radiografii Dentare Digitale-Retroalveolare</type>
+	</exam>
+	<exam>
+		<name>RADIOGRAFIE OCLUZALĂ-MAXILAR</name>
+		<price>30</price>
+		<type>Radiografii Dentare Digitale-Retroalveolare</type>
+	</exam>
+	<exam>
+		<name>RADIOGRAFIE OCLUZALĂ-MANDIBULĂ</name>
+		<price>30</price>
+		<type>Radiografii Dentare Digitale-Retroalveolare</type>
+	</exam>
+	<!---->
+	
+	<exam>	
+		<name>3D-CBCT ENDO-DINTE</name>
+		<price>80</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT SEGMENTAR</name>
+		<price>100</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT HEMIARCAD&#258;</name>
+		<price>150</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT ARCAD&#258;-MAXILAR</name>
+		<price>200</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT ARCAD&#258;-MANDIBULAR</name>
+		<price>200</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT ARCAD&#258; (MAXILAR + MANDIBULAR)</name>
+		<price>250</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT ARTICULA&#538;IE BILATERAL&#258; (A.T.M)</name>
+		<price>250</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT ARTICULA&#538;IE UNILATERAL&#258; (A.T.M)</name>
+		<price>150</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT SINUSURI MAXILARE</name>
+		<price>150</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT SINUSURI ANTERIOARE ALE FE&#538;EI (S.A.F.)</name>
+		<price>250</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<exam>	
+		<name>3D-CBCT CRANIU</name>
+		<price>300</price>
+		<type>Tomografii 3D CBCT<br/><a class="normal-fontsize">FOV(5X5; 6X8; 8X8; 8X15; 13X15)</a></type>
+	</exam>
+	<!---->
+	
+	<exam>	
+		<name>TELECEFALOGRAFIE FAȚĂ POSTERO-ANTERIOARĂ (TOWN INVERSĂ)</name>
+		<price>55</price>
+		<type>Radiografii Cefalometrice-Teleradiografii</type>
+	</exam>
+	<exam>
+		<name>TELECEFALOGRAFIE FAȚĂ POSTERO-ANTERIOARĂ (WATERS)</name>
+		<price>55</price>
+		<type>Radiografii Cefalometrice-Teleradiografii</type>
+	</exam>
+	<exam>
+		<name>TELECEFALOGRAFIE DE PROFIL</name>
+		<price>55</price>
+		<type>Radiografii Cefalometrice-Teleradiografii</type>
+	</exam>
+	<exam>
+		<name>TELECEFALOGRAFIE PEDIATRICĂ</name>
+		<price>55</price>
+		<type>Radiografii Cefalometrice-Teleradiografii</type>
+	</exam>
+	<exam>
+		<name>RADIOGRAFIE SINUSURI FRONTO-MAXILARE (S.A.F)</name>
+		<price>55</price>
+		<type>Radiografii Cefalometrice-Teleradiografii</type>
+	</exam>
+	<!---->
+	
+</exams>
