@@ -186,7 +186,8 @@ function SearchExams()
 		
 			try
 			{
-				var list = exams.filter( function(obj) { return obj['name'].toUpperCase().includes(filter) });
+				//var list = exams.filter( function(obj) { return obj['name'].toUpperCase().includes(filter) });
+				var list = exams.filter( function(obj) { return obj['name'].toUpperCase().indexOf(filter) >= 0 });
 				AddExams(list, filter.toLowerCase());
 				
 				HighlightText(filter);
