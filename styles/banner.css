@@ -33,12 +33,12 @@
 		background-image:url(../images/banner/720L.png);
 		height:320px;
 	}
-  
-  dark-theme .banner
-  {
-    background-image:url(../images/banner/720D.png);
+	
+	.dark-theme .banner
+	{
+		background-image:url(../images/banner/720D.png);
 		height:320px;
-  }
+	}
 }
 
 @media screen and (max-width:720px) 
@@ -48,10 +48,10 @@
 		background-image:url(../images/banner/320L.png);
 		height:320px;
 	}
-  
-  dark-theme .banner
-  {
-    background-image:url(../images/banner/320D.png);
+	
+	.dark-theme .banner
+	{
+		background-image:url(../images/banner/320D.png);
 		height:320px;
-  }
+	}
 }
