@@ -1,0 +1,17 @@
+.map
+{
+  background-image:url(../images/map/medios-center-map-l.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:auto auto;
+	display:block;
+	box-sizing:inherit;
+}
+.dark-theme .map
+{
+	background-image:url(../images/map/medios-center-map-d.png);
+}
