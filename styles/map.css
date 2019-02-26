@@ -1,6 +1,6 @@
 .map
 {
-  background-image:url(../images/map/medios-center-map-l.png);
+	background-image:url(../images/map/medios-center-map-l.png);
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	background-clip:border-box;
@@ -10,6 +10,7 @@
 	background-size:auto auto;
 	display:block;
 	box-sizing:inherit;
+	min-height:320px;
 }
 .dark-theme .map
 {
