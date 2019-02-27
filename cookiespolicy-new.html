@@ -49,12 +49,26 @@
 window.onload = function() 
 {
 	Page_OnLoad(false, false, true, false, "https://www.mediosmedical.ro/images/", false);
+	
+	try
+	{
+		var theme = GetCookie("theme");
+		if (theme === "dark")
+		{
+			var body = document.getElementById("body");
+			if (body)
+			{
+				body.className = "dark-theme";
+			}
+		}
+	}
+	catch(ex){}
 };
 </script>
 
 </head>
 
-<body id="body" onresize="Page_OnResize('https://www.mediosmedical.ro/images/')">
+<body id="body" onresize="Page_OnResize('https://www.mediosmedical.ro/images/')" class="light-theme">
 
 <!--headerBar-->
 <div id="headerBar"></div>
