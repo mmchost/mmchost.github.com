@@ -342,7 +342,24 @@ body
 }
 </style>
 
-<script type="text/javascript">	
+<script type="text/javascript">
+window.onload = function()
+{
+	try
+	{
+		var theme = GetCookie("theme");
+		if (theme === "dark")
+		{
+			var body = document.getElementById("body");
+			if (body)
+			{
+				body.className = "dark-theme";
+			}
+		}
+	}
+	catch(ex){}
+}
+
 function GoBack()
 {
 	location.href = "https://www.mediosmedical.ro";
