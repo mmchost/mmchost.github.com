@@ -37,6 +37,7 @@
 <link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/form.css" charset="utf-8"/>
 
 <link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/tabControl.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/label.css" charset="utf-8"/>
 
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.js"></script>
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.scrollTo.js"></script>	
@@ -76,13 +77,17 @@ window.onload = function()
 <!--text-->
 <tr><td><a name="home" id="hometag" class="tag" style="background:;"/></td></tr>
 <tr><td id="tabItemsContainer" class="section-title" style="padding:2px 0px 0px 0px; border-style:none; white-space:nowrap;">
-<div class="tab" onclick="TabSelectionChanged(this)">Deveniti partener</div><div class="tab selected" onclick="TabSelectionChanged(this)">Leaf Implant</div>
+<div class="tab tab-selected" onclick="TabSelectionChanged(this)">Deveniți colaborator</div><div class="tab" onclick="TabSelectionChanged(this)">Leaf Implant</div>
 </td></tr>
 
 <tr>
 <td id="tabContentContainer" style="background:white; height:100%; vertical-align:top;">
 <div class="tab-content" style="display:block;">
 
+	Programul de colaborare al societatii Medios Medical Center, ofera o serie de beneficii si avantaje consistente pentru medicii stomatologi.<br/>
+	Pentru a deveni medic colaborator cu societatea Medios Medical Center, va rugam sa completati formularul de mai jos, sau sa ne contactati la adresa de email mediosmedical@gmail.com<br/>
+	Dupa primirea datelor dvs., veti fi contactat(a) de un reprezentant al societatii Medios Medical Center, pentru a va prezenta ofertele centrului de imagistica dentara Medios Medical Center, pentru medicii colaboratori.
+	
 <!--the form-->	
 		<form method="POST" action="https://script.google.com/macros/s/AKfycbzlUReNdpgkF4GUDUnsBKSjfgTzj3mRfG4CQlBv/exec">				
 				<table class="formTable" cellpadding="0" cellspacing="0" style="padding:5px; max-width:580px;" align="center">					
@@ -123,7 +128,7 @@ window.onload = function()
 								<label id="name-invalid" class="label-invalid">! denumire societate invalida</label>
 							</div>
 							<div class="inputContainer">
-								<label>Adresa</label>
+								<label>Adresa *</label>
 								<br/>
 								<input class="textbox" type="text" name="Adresa" id="address" placeholder="str., nr., localitate"/>
 								<br/>
