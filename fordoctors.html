@@ -51,35 +51,15 @@
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/tabControl.js"></script>
 
 <script type="text/javascript">	
-function Terms_CheckedChanged()
-{
-	var button = document.getElementById("sendButton");
-	var checkbox = document.getElementById("termsCheckbox");
-	if (button && checkbox)
-	{
-		var value = checkbox.checked;
-		button.disabled = !value;
-		if (!value)
-		{
-			button.className = "button-default-disabled";
-		}
-		else		
-		{
-			button.className = "button-default";
-		}
-	}
-}
-
 window.onload = function() 
 {
-	Page_OnLoad(false, false, true, false, "https://www.mediosmedical.ro/images/", false, "../");
-	Terms_CheckedChanged();
+	Page_OnLoad(false, false, true, false, "https://www.mediosmedical.ro/images/", false, "../");	
 };
 </script>
 
 </head>
 
-<body id="body" onresize="Page_OnResize('https://www.mediosmedical.ro/images/')" class="light-theme">
+<body id="body" class="light-theme">
 
 <!--headerBar-->
 <div id="headerBar"></div>
