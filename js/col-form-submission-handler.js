@@ -221,11 +221,13 @@
 			{
 				var status = xhr.statusText;
 				if (status == "OK")
-				{					
+				{		
+					document.cookie = "origin=fordoctors";
 					location.href = "processcomplette?true";
 				}
 				else			
 				{
+					document.cookie = "origin=fordoctors";
 					location.href = "processcomplette?false";
 				}
 			}
