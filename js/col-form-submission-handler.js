@@ -173,9 +173,9 @@
 	//obs
 	var invalidObs = document.getElementById("obs-invalid");
 	var obsBox = document.getElementById("obs");
-	if (data.Alte_observatii.length > 200)
+	if (data.Mentiuni.length > 200)
 	{
-		if (invalidObs) { invalidObs.style.display = "block"; invalidObs.innerHTML = "! numar depasit de caractere: " + data.Alte_observatii.length; }
+		if (invalidObs) { invalidObs.style.display = "block"; invalidObs.innerHTML = "! numar depasit de caractere: " + data.Mentiuni.length; }
 		if (obsBox) { obsBox.style.borderColor = "red"; }
 		isValid = false;
 	}
