@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ro" lang="ro-ro">
 <head>
 
-<title>Pentru Medici - Medios Medical Center</title>
+<title>Pentru medicii stomatologi - Medios Medical Center</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="author" content="Medios Medical Center">
@@ -17,6 +17,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400"/> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700"/> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800"/>
+
+<link rel="stylesheet" type="text/css" href="https://www.mediosmedical.ro/styles/banner.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://www.mediosmedical.ro/styles/map.css" charset="utf-8"/>
 
 <link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/main.css" charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/footer.css" charset="utf-8"/>
@@ -36,9 +39,6 @@
 <link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/cart.css" charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/form.css" charset="utf-8"/>
 
-<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/tabControl.css" charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/label.css" charset="utf-8"/>
-
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.js"></script>
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.scrollTo.js"></script>	
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.smoothAnchors.js"></script>
@@ -48,12 +48,24 @@
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/getCookie.js"></script>
 <script type="text/javascript" src="https://source.mediosmedical.ro/js/messageBox.js"></script>
 
-<script type="text/javascript" src="https://source.mediosmedical.ro/js/tabControl.js"></script>
-
 <script type="text/javascript">	
 window.onload = function() 
 {
-	Page_OnLoad(false, false, true, false, "https://www.mediosmedical.ro/images/", false, "../");	
+	Page_OnLoad(false, false, true, false, "images/", false, "../");
+	
+	try
+	{
+		var theme = GetCookie("theme");
+		if (theme === "dark")
+		{
+			var body = document.getElementById("body");
+			if (body)
+			{
+				body.className = "dark-theme";
+			}
+		}
+	}
+	catch(ex){}
 };
 </script>
 
@@ -71,142 +83,29 @@ window.onload = function()
 
 
 <!--icon-->
-<tr><td style="text-align:center; padding:32px; height:128px; background:url(https://source.mediosmedical.ro/images/info.png);background-repeat:no-repeat;background-attachment:scroll;background-clip:border-box;background-origin:padding-box;background-position-x:center;background-position-y:center;background-size:auto auto;box-sizing:inherit;"></td></tr>
+<tr><td style="text-align:center; padding:32px; height:128px; background:url(https://source.mediosmedical.ro/images/document.png);background-repeat:no-repeat;background-attachment:scroll;background-clip:border-box;background-origin:padding-box;background-position-x:center;background-position-y:center;background-size:auto auto;box-sizing:inherit;"></td></tr>
 <!--end icon-->
 
-<!--text-->
-<tr><td><a name="home" id="hometag" class="tag" style="background:;"/></td></tr>
-<tr><td id="tabItemsContainer" class="section-title" style="padding:2px 0px 0px 0px; border-style:none; white-space:nowrap;">
-<span class="tab tab-selected" onclick="TabSelectionChanged(this)">Colaborare</span><span class="tab" onclick="TabSelectionChanged(this)">Leaf Implant</span>
-</td></tr>
+<!--content-->
+<tr><td class="section-title">PENTRU MEDICII STOMATOLOGI</td></tr>
 
 <tr>
-<td id="tabContentContainer" style="background:white; height:100%; vertical-align:top;">
-<span class="tab-content" style="display:block;">
-<div class="text-content" style="display:block;">
-<a style="font-weight:bold;">Deveniți medic colaborator.</a><br/><br/>
-&emsp;Programul de colaborare al societății Medios Medical Center, oferă o serie de beneficii și avantaje consistente pentru medicii stomatologi. Pentru a deveni medic colaborator cu societatea Medios Medical Center, vă rugăm să completați formularul de mai jos, sau să ne contactați la adresa de email <a class="hyperlink-highlight" style="white-space:nowrap;">mediosmedical@gmail.com</a><br/>
-&emsp;După primirea datelor dvs., veți fi contactat(ă) de un reprezentant al societății Medios Medical Center, pentru a vă prezenta ofertele pentru medicii colaboratori.
-</div>
-<br/>
-<!--the form-->	
-		<form method="POST" action="https://script.google.com/macros/s/AKfycbyqLvOWAG-8TzTjkt_Er3ogjrZOFkbPNW_Csd7hIz-BVdTjp_ay/exec">
-				<table class="formTable" cellpadding="0" cellspacing="0" style="padding:5px; max-width:580px;" align="center">					
-					<tr>
-						<td>
-							<div class="inputContainer" style="display:none;">
-								<input class="textbox" type="text" name="honeypot" id="honeypot"/>
-							</div>
-						</td>
-					</tr>
-          
-          <tr>
-						<td>
-							<div class="inputContainer">
-								<label>Nume *</label>
-								<br/>
-								<input class="textbox" type="text" name="Nume" id="lastname" placeholder=""/>
-								<br/>
-								<label id="lastname-invalid" class="label-invalid">! nume invalid</label>
-							</div>
-              <div class="inputContainer">
-								<label>Prenume *</label>
-								<br/>
-								<input class="textbox" type="text" name="Prenume" id="firstname" placeholder=""/>
-								<br/>
-								<label id="firstname-invalid" class="label-invalid">! prenume invalid</label>
-							</div>              
-						</td>
-					</tr>
-          
-					<tr>
-						<td>
-              <div class="inputContainer">
-								<label>Denumire Societate / C.M.I. *</label>
-								<br/>
-								<input class="textbox" type="text" name="Denumire_Societate" id="comname" placeholder=""/>
-								<br/>
-								<label id="comname-invalid" class="label-invalid">! denumire societate invalida</label>
-							</div>
-							<div class="inputContainer">
-								<label>Adresa *</label>
-								<br/>
-								<input class="textbox" type="text" name="Adresa" id="address" placeholder="str., nr., localitate"/>
-								<br/>
-								<label id="address-invalid" class="label-invalid">! adresa invalida</label>
-							</div>							
-						</td>
-					</tr>
-					
-					<tr>
-						<td>
-							<div class="inputContainer">
-								<label>Adresa de email *</label>
-								<br/>
-								<input class="textbox" type="text" name="Adresa_de_email" id="email" value="" placeholder=""/>
-								<br/>
-								<label id="email-invalid" class="label-invalid">! email invalid</label>
-							</div>
-							<div class="inputContainer">
-								<label>Numar de Telefon *</label>
-								<br/>
-								<input class="textbox" type="text" name="Numar_de_Telefon" id="tel" placeholder=""/>
-								<br/>
-								<label id="tel-invalid" class="label-invalid">! nr. de telefon invalid</label>
-							</div>
-						</td>
-					</tr>
-					
-					<tr>
-						<td>
-							<div class="inputContainer">
-								<label>Mențiuni (maxim 200 caractere)</label>
-								<br/>								
-								<textarea class="textarea" name="Mentiuni" id="obs" value="" placeholder="Menționați alte detalii care nu sunt incluse în acest formular."></textarea>
-								<br/>
-								<label id="obs-invalid" class="label-invalid"></label>
-							</div>							
-						</td>
-					</tr>
-					
-					<tr><td>
-						<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Campurile notate cu * sunt obligatorii.</a>
-						<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Inainte de a trimite, va rugam sa va asigurati ca toate datele introduse de dvs. sunt corecte.</a>
-						<br/>
-						<label style="cursor:pointer; display:block; font-size:12px;" onclick="Terms_CheckedChanged()">
-						<input id="termsCheckbox" type="checkbox"/>
-						Am citit si sunt de acord cu <a class="hyperlink-highlight" href="terms">termenii si conditiile </a>acestui website.
-						</label>
-						<br/>
-						<center>
-							<button id="sendButton" style="margin-top:5px;">							
-								<table cellpadding="0" cellspacing="0" align="center" width="100%">
-									<tr>
-										<td id="loading" style="display:none; width:32px; height:32px; padding-left:10px; background:url(images/loading32.gif); background-repeat:no-repeat; background-attachment:scroll; background-clip:border-box; background-origin:padding-box; background-position-x:center; background-position-y:center; background-size:auto auto; box-sizing:inherit;"></td>
-										<td>Trimite</td>
-									</tr>
-								</table>								
-							</button>
-						</center>
-					</td></tr>
-				</table>
-			</form>
-			
-			<!-- Submit the Form to Google Using "AJAX" -->
-			<script data-cfasync="false" type="text/javascript" src="js/col-form-submission-handler.js"></script>
-		</div><br/><br/>
-<!--end the form-->
+<td class="text-content">
 
-</span>
-<span class="tab-content">
-<div class="text-content" style="display:block;">
-<a style="font-weight:bold;">Leaf Implant este disponibil pentru descărcare:</a><br/><br/>
-<button class="button-default" onclick="DownloadLeafImplant()">Descărcați Leaf Implant</button><br/><br/>
-<button class="button-default" onclick="InstallGuideLeafImplant()">Ghid de instalare</button>
+<div style="display:block; height:256px; background:#F3F3F3; width:100%; text-align:center;">
+<a style="display:block; font-size:24px; color:#0074bb; border-style:solid; border-width:0px 0px 1px 0px; border-color:#ccc;">Deveniti colaborator</a>
+<a style="display:block; font-size:24px; height:64px;">Programul de colaborare al societății Medios Medical Center, oferă o serie de beneficii și avantaje consistente pentru medicii stomatologi.</a>
+<button class="button-default">Mai mult &nbsp; →</button>
 </div>
-</span>
-</td>
-</tr>
+	
+<div style="display:block; height:256px; background:#F3F3F3; width:100%; text-align:center;">
+<a style="display:block; font-size:24px; color:#0074bb; border-style:solid; border-width:0px 0px 1px 0px; border-color:#ccc;">Leaf Implant</a>
+<a style="display:block; font-size:24px; height:64px;">Leaf Implant este disponibil pentru descarcare.</a>
+<button class="button-default">Mai mult &nbsp; →</button>
+</div>
+	
+</td></tr>
+<!--end content-->
 
 <tr><td><a name="contact" id="sectionTag2" class="tag"/></td></tr>
 
