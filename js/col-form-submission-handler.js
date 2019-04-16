@@ -197,7 +197,7 @@
 	}
 	//end human
 	
-	isValid = false;
+	//isValid = false;
 	if (isValid)
 	{
 		var loading = document.getElementById("loading");
