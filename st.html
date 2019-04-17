@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ro" lang="ro-ro">
+<head>
+
+<title>Bilet de trimitere online - Medios Medical Center</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="Medios Medical Center">
+
+<meta name="Resource-type" content="Document" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="shortcut icon" type="image/x-icon" href="https://source.mediosmedical.ro/images/favicon.png"/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400"/> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700"/> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800"/>
+
+<link rel="stylesheet" type="text/css" href="https://www.mediosmedical.ro/styles/banner.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://www.mediosmedical.ro/styles/map.css" charset="utf-8"/>
+
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/main.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/footer.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/messageBox.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/button.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/hyperlink.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/tag.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/infoBar.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/header.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/menu.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/section.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/mainContent.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/info.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/overlay.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/textBox.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/item.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/cart.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/form.css" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="https://source.mediosmedical.ro/styles/label.css" charset="utf-8"/>
+
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.js"></script>
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.scrollTo.js"></script>	
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/jquery.smoothAnchors.js"></script>
+
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/buttonEvents.js"></script>
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/main.js"></script>
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/getCookie.js"></script>
+<script type="text/javascript" src="https://source.mediosmedical.ro/js/messageBox.js"></script>
+
+<script type="text/javascript">
+function Terms_CheckedChanged()
+{
+	var button = document.getElementById("sendButton");
+	var checkbox = document.getElementById("termsCheckbox");
+	if (button && checkbox)
+	{
+		var value = checkbox.checked;
+		button.disabled = !value;
+		if (!value)
+		{
+			button.className = "button-default-disabled";
+		}
+		else		
+		{
+			button.className = "button-default";
+		}
+	}
+}
+
+window.onload = function() 
+{
+	Page_OnLoad(false, false, true, false, "https://www.mediosmedical.ro/images/", false, "../");
+	Terms_CheckedChanged();
+  
+	try
+	{
+		var theme = GetCookie("theme");
+		if (theme === "dark")
+		{
+			var body = document.getElementById("body");
+			if (body)
+			{
+				body.className = "dark-theme";
+			}
+		}
+	}
+	catch(ex){}
+};
+</script>
+
+</head>
+
+<body id="body" class="light-theme">
+
+<!--headerBar-->
+<div id="headerBar"></div>
+<!--end headerBar-->
+
+<table id="header" cellpadding="0" cellspacing="0" border="0"></table>
+
+<table id="main-content" class="main-content" cellpadding="0" cellspacing="0" height="90%">
+
+<!--text-->
+<tr><td class="section-title">BILET DE TRIMITERE ONLINE</td></tr>
+
+<tr>
+<td class="text-content">
+<a class="normal-fontsize">
+&emsp;Pentru a trimite pacientul dvs. (in scopul de a i se efectua o investigatie medicala), la centrul de radiologie si imagistica medicala <a class="hyperlink-highlight" style="white-space:nowrap;">Medios Medical Center</a>, vă rugăm să completați biletul de trimitere de mai jos.<br/>
+&emsp;După trimiterea cu succes a datelor introduse de dvs. in acest formular, va rugam sa notificati pacientul dvs. pentru a se prezenta la centrul de radiologie si imagistica medicala <a class="hyperlink-highlight" style="white-space:nowrap;">Medios Medical Center</a> pentru efectuarea investigatiilor medicale.
+</a>
+<!--the form-->	
+		<form method="POST" action="https://script.google.com/macros/s/AKfycbyqLvOWAG-8TzTjkt_Er3ogjrZOFkbPNW_Csd7hIz-BVdTjp_ay/exec" style="margin-top:24px;">
+				<table class="formTable" cellpadding="0" cellspacing="0" style="padding:10px; max-width:600px; border-style:solid; border-width:1px; border-color:#0074bb;" align="center">
+					<tr>
+						<td>
+							<div class="inputContainer" style="display:none;">
+								<input class="textbox" type="text" name="honeypot" id="honeypot"/>
+							</div>
+						</td>
+					</tr>
+          
+          <tr>
+						<td>
+							<div class="inputContainer">
+								<label>Nume Pacient *</label>
+								<br/>
+								<input class="textbox" type="text" name="Nume_Pacient" id="patientname" placeholder=""/>
+								<br/>
+								<label id="patientname-invalid" class="label-invalid">! nume pacient invalid</label>
+							</div>
+              <div class="inputContainer">
+								<label>Nume Medic *</label>
+								<br/>
+								<input class="textbox" type="text" name="Prenume" id="doctorname" placeholder=""/>
+								<br/>
+								<label id="doctorname-invalid" class="label-invalid">! nume medic invalid</label>
+							</div>              
+						</td>
+					</tr>
+          
+					<tr>
+						<td>
+							<div class="inputContainer">
+								<label>Adresa de email medic *</label>
+								<br/>
+								<input class="textbox" type="text" name="Adresa_de_email" id="email" value="" placeholder=""/>
+								<br/>
+								<label id="email-invalid" class="label-invalid">! email invalid</label>
+							</div>
+							<div class="inputContainer">
+								<label>Numar de telefon medic *</label>
+								<br/>
+								<input class="textbox" type="text" name="Numar_de_Telefon" id="tel" placeholder=""/>
+								<br/>
+								<label id="tel-invalid" class="label-invalid">! nr. de telefon invalid</label>
+							</div>
+						</td>
+					</tr>
+          
+          <tr>
+						<td>
+							<div class="inputContainer">
+								<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ENDO-DINTE">3D 3D-CBCT ENDO-DINTE</label>
+                <label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SEGMENTAR">3D 3D-CBCT SEGMENTAR</label>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<div class="inputContainer">
+								<label>Mențiuni (maxim 200 caractere)</label>
+								<br/>								
+								<textarea class="textarea" name="Mentiuni" id="obs" value="" placeholder="Menționați alte detalii care nu sunt incluse în acest formular."></textarea>
+								<br/>
+								<label id="obs-invalid" class="label-invalid"></label>
+							</div>							
+						</td>
+					</tr>
+					
+					<tr><td>
+						<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Campurile notate cu * sunt obligatorii.</a>
+						<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Inainte de a trimite, va rugam sa va asigurati ca toate datele introduse de dvs. sunt corecte.</a>
+						<br/>
+						<label style="cursor:pointer; display:block; font-size:12px;" onclick="Terms_CheckedChanged()">
+						<input id="termsCheckbox" type="checkbox"/>
+						Am citit si sunt de acord cu <a class="hyperlink-highlight" href="terms">termenii si conditiile </a>acestui website.
+						</label>
+						<br/>
+						<center>
+							<button id="sendButton" style="margin-top:5px;margin-bottom:5px;">							
+								<table cellpadding="0" cellspacing="0" align="center" width="100%">
+									<tr>
+										<td id="loading" style="display:none; width:32px; height:32px; padding-left:10px; background:url(https://source.mediosmedical.ro/images/loading32.gif); background-repeat:no-repeat; background-attachment:scroll; background-clip:border-box; background-origin:padding-box; background-position-x:center; background-position-y:center; background-size:auto auto; box-sizing:inherit;"></td>
+										<td>Trimite</td>
+									</tr>
+								</table>								
+							</button>
+						</center>
+					</td></tr>
+				</table>
+			</form>
+			
+			<!-- Submit the Form to Google Using "AJAX" -->
+			<script data-cfasync="false" type="text/javascript" src="js/col-form-submission-handler.js"></script>
+		</div>
+<!--end the form-->
+</td></tr>
+<!--end text-->
+
+<tr><td><a name="contact" id="sectionTag2" class="tag"/></td></tr>
+
+<tr>
+<td class="section-title">
+<p style="display:inline-block; padding:0px; margin:0px;">CONTACT</p>
+</td>
+</tr>
+
+<!--MAP-->
+<tr>
+<td style="height:320px; min-height:320px; background: url(images/loading.gif); background-repeat:no-repeat; background-attachment:scroll; background-clip:border-box; background-origin:padding-box; background-position-x:center; background-position-y:center; background-size:auto auto; box-sizing:inherit;">
+<a class="image-hlink" href="https://google.com/maps/place/Strada+Traian+36,+Cluj-Napoca" target="_blank">
+<div class="map"></div>
+</a>
+</td>
+</tr>
+<!--END MAP-->
+
+
+<!--FOOTER-->
+<tr>
+<td class="footer-content" id="footerContact"></td>
+</tr>
+<!--END FOOTER-->
+
+<!--FOOTER MENU-->
+<tr>
+<td class="footer-menu-container" id="footerMenu"></td>
+</tr>
+<!--END FOOTER MENU-->
+
+
+<!--COPYRIGHT-->
+<tr>
+<td class="footer-copyright" id="footer-copyright-ws"></td>
+</tr>
+<!--END COPYRIGHT-->
+
+</table>
+
+<!--footerBar-->
+<div id="footerBar"></div>
+<!--end footerBar-->
+
+</body>
+</html>
