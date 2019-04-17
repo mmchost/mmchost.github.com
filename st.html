@@ -113,7 +113,7 @@ window.onload = function()
 </a>
 <!--the form-->
 <form method="POST" action="https://script.google.com/macros/s/AKfycbyqLvOWAG-8TzTjkt_Er3ogjrZOFkbPNW_Csd7hIz-BVdTjp_ay/exec" style="margin-top:24px;">
-	<table class="formTable" cellpadding="0" cellspacing="0" style="padding:10px; max-width:600px; border-style:solid; border-width:1px; border-color:#0074bb;" align="center">
+	<table class="formTable" cellpadding="0" cellspacing="0" style="padding:10px; max-width:600px; border-style:solid; border-width:1px; border-color:#0074bb; font-size:14px;" align="center">
 		<tr>
 			<td>
 				<div class="inputContainer" style="display:none;">
@@ -163,6 +163,16 @@ window.onload = function()
 		<tr>
 			<td>
 				<div class="inputContainer">
+					<span style="font-weight:bold; color:#0074bb;">TOMOGRAFII COMPUTERIZATE 3D-CBCT</span>
+					<center><span style="display:block; font-weight:bold;">
+						FOV:
+						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV5x5">5x5</label>
+						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV6x8">6x8</label>
+						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV8x8">8x8</label>
+						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV8x15">8x15</label>
+						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV13x15">13x15</label>
+					</span></center>
+					
 					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ENDO-DINTE">3D-CBCT ENDO-DINTE</label>
 					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SEGMENTAR">3D-CBCT SEGMENTAR</label>
 					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_HEMIARCADA">3D-CBCT HEMIARCADA</label>
@@ -175,16 +185,7 @@ window.onload = function()
 					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SINUSURI_ANTERIOARE_ALE_FETEI">3D-CBCT SINUSURI ANTERIOARE ALE FETEI (S.A.F.)</label>
 					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_CRANIU">3D-CBCT CRANIU</label>
 					
-					<span style="font-weight:bold; color:0074bb;">TOMOGRAFII COMPUTERIZATE 3D-CBCT</span>
-					<center><span style="display:block; font-weight:bold;">
-						FOV:
-						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV5x5">5x5</label>
-						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV6x8">6x8</label>
-						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV8x8">8x8</label>
-						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV8x15">8x15</label>
-						<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="FOV13x15">13x15</label>
-					</span></center>
-					<table cellpadding="0" cellspacing="0">
+					<table cellpadding="0" cellspacing="0" style="font-size:11px;">
 						<tr>
 							<td style="border-style:solid; border-width:0px 1px 1px 0px;">
 								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D18">18</label>
@@ -230,6 +231,32 @@ window.onload = function()
 							</td>
 						</tr>
 					</table>
+					
+					<span style="font-weight:bold; color:#0074bb;">RX. PANORAMICE</span>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_1_1">ORTOPANTOMOGRAFIE 1:1</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_1_2">ORTOPANTOMOGRAFIE 1:2</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_PEDIATRICA">ORTOPANTOMOGRAFIE PEDIATRICA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_ATM_LATERAL">ORTOPANTOMOGRAFIE A.T.M. LATERAL</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_ATM_POSTERO-ANTERIOR">ORTOPANTOMOGRAFIE A.T.M. POSTERO-ANTERIOR</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_ATM_GURA_DESCHISA">ORTOPANTOMOGRAFIE A.T.M. GURA DESCHISA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_ATM_GURA_INCHISA">ORTOPANTOMOGRAFIE A.T.M. GURA INCHISA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_BITEWING">ORTOPANTOMOGRAFIE BITEWING</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_SECTIONALA">ORTOPANTOMOGRAFIE SECTIONALA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="ORTOPANTOMOGRAFIE_SINUSURI_MAXILARE">ORTOPANTOMOGRAFIE SINUSURI MAXILARE</label>
+					
+					<span style="font-weight:bold; color:#0074bb;">RX. CEFALOMETRICE - TELERADIOGRAFII</span>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="TELECEFALOGRAFIE_POSTERO-ANTERIOARA_TOWN_INV">TELECEFALOGRAFIE POSTERO-ANTERIOARA (POZITIE TOWN INV.)</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="TELECEFALOGRAFIE_POSTERO-ANTERIOARA_WATERS">TELECEFALOGRAFIE POSTERO-ANTERIOARA (POZITIE WATERS)</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="TELECEFALOGRAFIE_DE_PROFIL">TELECEFALOGRAFIE DE PROFIL</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="TELECEFALOGRAFIE_PEDIATRICA">TELECEFALOGRAFIE PEDIATRICA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="RADIOGRAFIE_SINUSURI_FRONTO-MAXILARE">RADIOGRAFIE SINUSURI FRONTO-MAXILARE (S.A.F.)</label>
+					
+					<span style="font-weight:bold; color:#0074bb;">RX. DENTARE DIGITALE - RETROALVEOLARE</span>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="RADIOGRAFIE_RETROALVEOLARA">RADIOGRAFIE RETROALVEOLARA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="RADIOGRAFIE_BITEWING">RADIOGRAFIE BITEWING</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="RADIOGRAFIE_OCLUZALA_MAXILAR">RADIOGRAFIE OCLUZALAMAXILAR</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="RADIOGRAFIE_OCLUZALA_MANDIBULA">RADIOGRAFIE OCLUZALA MANDIBULA</label>
+					
 				</div>
 			</td>
 		</tr>
