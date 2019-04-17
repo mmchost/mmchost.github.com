@@ -108,105 +108,137 @@ window.onload = function()
 <tr>
 <td class="text-content">
 <a class="normal-fontsize">
-&emsp;Pentru a trimite pacientul dvs. (in scopul de a i se efectua o investigatie medicala), la centrul de radiologie si imagistica medicala <a class="hyperlink-highlight" style="white-space:nowrap;">Medios Medical Center</a>, vă rugăm să completați biletul de trimitere de mai jos.<br/>
-&emsp;După trimiterea cu succes a datelor introduse de dvs. in acest formular, va rugam sa notificati pacientul dvs. pentru a se prezenta la centrul de radiologie si imagistica medicala <a class="hyperlink-highlight" style="white-space:nowrap;">Medios Medical Center</a> pentru efectuarea investigatiilor medicale.
+&emsp;Pentru a trimite pacientul dvs. (in scopul de a i se efectua o investigatie medicala), la centrul de radiologie si imagistica dentara <a class="hyperlink-highlight" style="white-space:nowrap;">Medios Medical Center</a>, vă rugăm să completați biletul de trimitere de mai jos.<br/>
+&emsp;După trimiterea cu succes a datelor introduse de dvs. in acest formular, va rugam sa notificati pacientul dvs. pentru a se prezenta la centrul de radiologie si imagistica dentara <a class="hyperlink-highlight" style="white-space:nowrap;">Medios Medical Center</a> situat in Cluj-Napoca, str. Traian, nr. 36, pentru efectuarea investigatiilor medicale.
 </a>
-<!--the form-->	
-		<form method="POST" action="https://script.google.com/macros/s/AKfycbyqLvOWAG-8TzTjkt_Er3ogjrZOFkbPNW_Csd7hIz-BVdTjp_ay/exec" style="margin-top:24px;">
-				<table class="formTable" cellpadding="0" cellspacing="0" style="padding:10px; max-width:600px; border-style:solid; border-width:1px; border-color:#0074bb;" align="center">
-					<tr>
-						<td>
-							<div class="inputContainer" style="display:none;">
-								<input class="textbox" type="text" name="honeypot" id="honeypot"/>
-							</div>
-						</td>
-					</tr>
-          
-          <tr>
-						<td>
-							<div class="inputContainer">
-								<label>Nume Pacient *</label>
-								<br/>
-								<input class="textbox" type="text" name="Nume_Pacient" id="patientname" placeholder=""/>
-								<br/>
-								<label id="patientname-invalid" class="label-invalid">! nume pacient invalid</label>
-							</div>
-              <div class="inputContainer">
-								<label>Nume Medic *</label>
-								<br/>
-								<input class="textbox" type="text" name="Prenume" id="doctorname" placeholder=""/>
-								<br/>
-								<label id="doctorname-invalid" class="label-invalid">! nume medic invalid</label>
-							</div>              
-						</td>
-					</tr>
-          
-					<tr>
-						<td>
-							<div class="inputContainer">
-								<label>Adresa de email medic *</label>
-								<br/>
-								<input class="textbox" type="text" name="Adresa_de_email" id="email" value="" placeholder=""/>
-								<br/>
-								<label id="email-invalid" class="label-invalid">! email invalid</label>
-							</div>
-							<div class="inputContainer">
-								<label>Numar de telefon medic *</label>
-								<br/>
-								<input class="textbox" type="text" name="Numar_de_Telefon" id="tel" placeholder=""/>
-								<br/>
-								<label id="tel-invalid" class="label-invalid">! nr. de telefon invalid</label>
-							</div>
-						</td>
-					</tr>
-          
-          <tr>
-						<td>
-							<div class="inputContainer">
-								<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ENDO-DINTE">3D 3D-CBCT ENDO-DINTE</label>
-                <label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SEGMENTAR">3D 3D-CBCT SEGMENTAR</label>
-							</div>
-						</td>
-					</tr>
+<!--the form-->
+<form method="POST" action="https://script.google.com/macros/s/AKfycbyqLvOWAG-8TzTjkt_Er3ogjrZOFkbPNW_Csd7hIz-BVdTjp_ay/exec" style="margin-top:24px;">
+	<table class="formTable" cellpadding="0" cellspacing="0" style="padding:10px; max-width:600px; border-style:solid; border-width:1px; border-color:#0074bb;" align="center">
+		<tr>
+			<td>
+				<div class="inputContainer" style="display:none;">
+					<input class="textbox" type="text" name="honeypot" id="honeypot"/>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<div class="inputContainer">
+					<label>Nume Pacient *</label>
+					<br/>
+					<input class="textbox" type="text" name="Nume_Pacient" id="patientname" placeholder=""/>
+					<br/>
+					<label id="patientname-invalid" class="label-invalid">! nume pacient invalid</label>
+				</div>
+				<div class="inputContainer">
+					<label>Nume Medic *</label>
+					<br/>
+					<input class="textbox" type="text" name="Prenume" id="doctorname" placeholder=""/>
+					<br/>
+					<label id="doctorname-invalid" class="label-invalid">! nume medic invalid</label>
+				</div>              
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div class="inputContainer">
+					<label>Adresa de email medic *</label>
+					<br/>
+					<input class="textbox" type="text" name="Adresa_de_email" id="email" value="" placeholder=""/>
+					<br/>
+					<label id="email-invalid" class="label-invalid">! email invalid</label>
+				</div>
+				<div class="inputContainer">
+					<label>Numar de telefon medic *</label>
+					<br/>
+					<input class="textbox" type="text" name="Numar_de_Telefon" id="tel" placeholder=""/>
+					<br/>
+					<label id="tel-invalid" class="label-invalid">! nr. de telefon invalid</label>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div class="inputContainer">
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ENDO-DINTE">3D 3D-CBCT ENDO-DINTE</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SEGMENTAR">3D 3D-CBCT SEGMENTAR</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_HEMIARCADA">3D 3D-CBCT HEMIARCADA</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ARCADA-MAXILAR">3D 3D-CBCT ARCADA-MAXILAR</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ARCADA-MANDIBULAR">3D 3D-CBCT ARCADA-MANDIBULAR</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ARCADA-MAXILAR+MANDIBULAR">3D 3D-CBCT ARCADA-MAXILAR+MANDIBULAR</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ARTICULATIE_BILATERALA">3D 3D-CBCT ARTICULATIE BILATERALA (A.T.M.)</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_ARTICULATIE_UNILATERALA">3D 3D-CBCT ARTICULATIE UNILATERALA (A.T.M.)</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SINUSURI_MAXILARE">3D 3D-CBCT SINUSURI MAXILARE</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_SINUSURI_ANTERIOARE_ALE_FETEI">3D 3D-CBCT SINUSURI ANTERIOARE ALE FETEI (S.A.F.)</label>
+					<label style="cursor:pointer; display:block;"><input type="checkbox" name="3D-CBCT_CRANIU">3D 3D-CBCT CRANIU</label>
 					
-					<tr>
-						<td>
-							<div class="inputContainer">
-								<label>Mențiuni (maxim 200 caractere)</label>
-								<br/>								
-								<textarea class="textarea" name="Mentiuni" id="obs" value="" placeholder="Menționați alte detalii care nu sunt incluse în acest formular."></textarea>
-								<br/>
-								<label id="obs-invalid" class="label-invalid"></label>
-							</div>							
-						</td>
-					</tr>
-					
-					<tr><td>
-						<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Campurile notate cu * sunt obligatorii.</a>
-						<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Inainte de a trimite, va rugam sa va asigurati ca toate datele introduse de dvs. sunt corecte.</a>
-						<br/>
-						<label style="cursor:pointer; display:block; font-size:12px;" onclick="Terms_CheckedChanged()">
-						<input id="termsCheckbox" type="checkbox"/>
-						Am citit si sunt de acord cu <a class="hyperlink-highlight" href="terms">termenii si conditiile </a>acestui website.
-						</label>
-						<br/>
-						<center>
-							<button id="sendButton" style="margin-top:5px;margin-bottom:5px;">							
-								<table cellpadding="0" cellspacing="0" align="center" width="100%">
-									<tr>
-										<td id="loading" style="display:none; width:32px; height:32px; padding-left:10px; background:url(https://source.mediosmedical.ro/images/loading32.gif); background-repeat:no-repeat; background-attachment:scroll; background-clip:border-box; background-origin:padding-box; background-position-x:center; background-position-y:center; background-size:auto auto; box-sizing:inherit;"></td>
-										<td>Trimite</td>
-									</tr>
-								</table>								
-							</button>
-						</center>
-					</td></tr>
-				</table>
-			</form>
-			
-			<!-- Submit the Form to Google Using "AJAX" -->
-			<script data-cfasync="false" type="text/javascript" src="js/col-form-submission-handler.js"></script>
-		</div>
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td style="border-style:solid; border-width:0px; 1px; 1px; 0px;">
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D18">18</label>
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D17">17</label>
+							</td>
+							<td style="border-style:solid; border-width:0px 0px 1px 0px;">
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D21">21</label>
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D22">22</label>
+							</td>
+						</tr>
+						<tr>
+							<td style="border-style:solid; border-width:0px 1px 0px 0px;">
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D48">48</label>
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D47">47</label>
+							</td>
+							<td>
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D31">31</label>
+								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D32">32</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div class="inputContainer">
+					<label>Mențiuni (maxim 200 caractere)</label>
+					<br/>								
+					<textarea class="textarea" name="Mentiuni" id="obs" value="" placeholder="Menționați alte detalii care nu sunt incluse în acest formular."></textarea>
+					<br/>
+					<label id="obs-invalid" class="label-invalid"></label>
+				</div>							
+			</td>
+		</tr>
+		
+		<tr><td>
+			<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Campurile notate cu * sunt obligatorii.</a>
+			<a style="font-size:12px; display:block; margin-top:12px; margin-left:7px;">Inainte de a trimite, va rugam sa va asigurati ca toate datele introduse de dvs. sunt corecte.</a>
+			<br/>
+			<label style="cursor:pointer; display:block; font-size:12px;" onclick="Terms_CheckedChanged()">
+				<input id="termsCheckbox" type="checkbox"/>
+				Am citit si sunt de acord cu <a class="hyperlink-highlight" href="terms">termenii si conditiile </a>acestui website.
+			</label>
+			<br/>
+			<center>
+				<button id="sendButton" style="margin-top:5px;margin-bottom:5px;">							
+					<table cellpadding="0" cellspacing="0" align="center" width="100%">
+						<tr>
+							<td id="loading" style="display:none; width:32px; height:32px; padding-left:10px; background:url(https://source.mediosmedical.ro/images/loading32.gif); background-repeat:no-repeat; background-attachment:scroll; background-clip:border-box; background-origin:padding-box; background-position-x:center; background-position-y:center; background-size:auto auto; box-sizing:inherit;"></td>
+							<td>Trimite</td>
+						</tr>
+					</table>								
+				</button>
+			</center>
+			</td></tr>
+	</table>
+</form>
+	
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript" src="js/col-form-submission-handler.js"></script>
+</div>
 <!--end the form-->
 </td></tr>
 <!--end text-->
