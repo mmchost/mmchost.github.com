@@ -89,6 +89,35 @@ window.onload = function()
 	catch(ex){}
 };
 </script>
+	
+<style>
+.cbox
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+}
+.cbox-label
+{
+	display:inline-block;
+	border-style:solid;
+	border-width:1px;
+	border-color:0074bb;
+	text-align:center;
+	vertical-align:middle;
+	width:20px;
+	padding:2px 1px 1px 0px;	
+}
+.cbox-content
+{
+	display:block;	
+	padding:0px;	
+	border-style:none;
+	font-size:12px;
+	cursor:pointer;
+}
+</style>
 
 </head>
 
@@ -188,14 +217,14 @@ window.onload = function()
 					<table cellpadding="0" cellspacing="0" style="font-size:11px; color:#000;">
 						<tr>
 							<td style="border-style:solid; border-width:0px 1px 1px 0px;">
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D18">18</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D17">17</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D16">16</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D15">15</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D14">14</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D13">13</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D12">12</label>
-								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D11">11</label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D18"><span class="cbox-content">18</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D17"><span class="cbox-content">17</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D16"><span class="cbox-content">16</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D15"><span class="cbox-content">15</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D14"><span class="cbox-content">14</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D13"><span class="cbox-content">13</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D12"><span class="cbox-content">12</span></center></label>
+								<label class="cbox-label"><center><input type="checkbox" name="3D11"><span class="cbox-content">11</span></center></label>
 							</td>
 							<td style="border-style:solid; border-width:0px 0px 1px 0px;">
 								<label style="cursor:pointer; display:inline-block;"><input type="checkbox" name="3D21">21</label>
