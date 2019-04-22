@@ -13,7 +13,7 @@
 
 		var fields = Object.keys(elements).filter(function(k) 
 		{
-			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none" && elements[k].checked);
+			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none" || elements[k].checked);
 		}).map(function(k) 
 		{
 			if(elements[k].name !== undefined) 
