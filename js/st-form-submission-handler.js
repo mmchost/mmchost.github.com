@@ -10,10 +10,23 @@
 	function getFormData(form) 
 	{
 		var elements = form.elements;
+		
+		var index = 0;
+		while (index < elements.length - 1)
+		{
+			if (elements[index].type == "checkbox")
+			{
+				if (elements[index].checked == false)
+				{
+					elements.splice(index, 1);
+				}
+			}
+			index++;
+		}
 
 		var fields = Object.keys(elements).filter(function(k) 
 		{
-			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none") || (elements[k].type == "checkbox" && elements[k].checked == true)
+			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none")
 		}).map(function(k) 
 		{
 			if(elements[k].name !== undefined) 
@@ -30,21 +43,7 @@
 			return self.indexOf(item) == pos && item;
 		});
 		
-		/*
-		var index = 0;
-		while (index < elements.length - 1)
-		{
-			if (elements[index].type == "checkbox")
-			{
-				if (elements[index].checked == false)
-				{
-					elements.splice(index, 1);
-				}
-			}
-			index++;
-		}
-		*/
-	
+		
 		var formData = {};
 		fields.forEach(function(name)
 		{
