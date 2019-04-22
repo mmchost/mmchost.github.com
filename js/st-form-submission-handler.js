@@ -13,7 +13,7 @@
 
 		var fields = Object.keys(elements).filter(function(k) 
 		{
-			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none");
+			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none") || (elements[k].type == "checkbox" && elements[k].checked == true
 		}).map(function(k) 
 		{
 			if(elements[k].name !== undefined) 
@@ -30,6 +30,7 @@
 			return self.indexOf(item) == pos && item;
 		});
 		
+		/*
 		var index = 0;
 		while (index < elements.length - 1)
 		{
@@ -42,6 +43,7 @@
 			}
 			index++;
 		}
+		*/
 	
 		var formData = {};
 		fields.forEach(function(name)
