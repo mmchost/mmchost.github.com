@@ -30,15 +30,17 @@
 			return self.indexOf(item) == pos && item;
 		});
 		
-		for (var i=0; i<elements.length; i++)
+		var index = 0;
+		while (index < elements.length - 1)
 		{
-			if (elements[i].type == "checkbox")
+			if (elements[index].type == "checkbox")
 			{
-				if (elements[i].checked == false)
+				if (elements[index].checked == false)
 				{
-					elements.splice(i, 1);
+					elements.splice(index, 1);
 				}
 			}
+			index++;
 		}
 	
 		var formData = {};
