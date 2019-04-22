@@ -36,7 +36,7 @@
 			{
 				if (elements[i].checked == false)
 				{
-					elements.slice(i, 1);
+					elements.splice(i, 1);
 				}
 			}
 		}
