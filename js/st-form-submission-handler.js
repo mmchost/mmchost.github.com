@@ -13,7 +13,7 @@
 
 		var fields = Object.keys(elements).filter(function(k) 
 		{
-			return ((elements[k].name !== "honeypot" && elements[k].style.display !== "none") || elements[k].checked == true);
+			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none");
 		}).map(function(k) 
 		{
 			if(elements[k].name !== undefined) 
@@ -29,6 +29,17 @@
 		{
 			return self.indexOf(item) == pos && item;
 		});
+		
+		for (var i=0; i<elements.length; i++)
+		{
+			if (elements[i].type == "checkbox")
+			{
+				if (elements[i].checked == false)
+				{
+					elements.slice(i, 1);
+				}
+			}
+		}
 	
 		var formData = {};
 		fields.forEach(function(name)
