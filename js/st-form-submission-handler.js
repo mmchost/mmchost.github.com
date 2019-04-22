@@ -11,6 +11,7 @@
 	{
 		var elements = form.elements;
 		
+		/*
 		var index = 0;
 		while (index < elements.length - 1)
 		{
@@ -23,6 +24,7 @@
 			}
 			index++;
 		}
+		*/
 
 		var fields = Object.keys(elements).filter(function(k) 
 		{
@@ -41,6 +43,18 @@
 		}).filter(function(item, pos, self) 
 		{
 			return self.indexOf(item) == pos && item;
+		});
+		
+		fields = fields.filter(function(obj)
+		{
+			if (obj.type !== "checkbox")
+			{
+				return obj;
+			}
+			else
+			{
+				return obj.checked == true;
+			}
 		});
 		
 		
