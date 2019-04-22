@@ -28,7 +28,14 @@
 
 		var fields = Object.keys(elements).filter(function(k) 
 		{
-			return (elements[k].name !== "honeypot" && elements[k].style.display !== "none")
+			if (elements[k].type !== "checkbox")
+			{
+				return (elements[k].name !== "honeypot" && elements[k].style.display !== "none")
+			}
+			else
+			{
+				return elements[k].checked == true;
+			}			
 		}).map(function(k) 
 		{
 			if(elements[k].name !== undefined) 
@@ -43,20 +50,7 @@
 		}).filter(function(item, pos, self) 
 		{
 			return self.indexOf(item) == pos && item;
-		});
-		
-		fields = fields.filter(function(obj)
-		{
-			if (obj.type !== "checkbox")
-			{
-				return obj;
-			}
-			else
-			{
-				return obj.checked == true;
-			}
-		});
-		
+		});		
 		
 		var formData = {};
 		fields.forEach(function(name)
